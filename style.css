@@ -5,21 +5,45 @@
     box-sizing: border-box;
 }
 
+/* Book (default) */
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url("fonts/SuisseIntl-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+/* Book (italic) */
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url("fonts/SuisseIntl-BookItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* ----------------------------- */
 /* 1. Global Page Setup */
 body {
-    margin: 3rem;
+    margin: 2rem 10rem;
     max-width: 100vw;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Suisse Intl', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
     color: #f5f6f7;
     background-color: #232323;
 }
 
 section {
     width: 100%;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
+}
+footer {
+    width: 100%;
 }
 
-/* Grid Setup */
+
+/* ----------------------------- */
+/* 2. Grid Setup */
+
 .grid, .resume-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -42,7 +66,70 @@ section {
     grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
 }
-.resume-grid::before {
+/* creates an empty column at the start*/
+.before-grid::before {
     content: "";
     grid-column: 1 / span 2;
+}
+
+/* ----------------------------- */
+/*--- 3. Typography */
+h1, h2 {
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h3, p { 
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 { 
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+ }
+h2 { 
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+ }
+
+h3 { font-size: 0.875rem;
+     font-weight: bold;
+ }
+
+p, li { 
+    font-size: 0.875rem;
+    max-width: 65ch;
+ }
+
+/* ----------------------------- */
+/*--- 4. Layout & Spacing Utilities */
+
+/*Margin Top + Bottom*/
+.u-m-sm { margin: 1rem 0; }
+.u-m-md { margin: 3rem 0; }
+.u-m-lg { margin: 6rem ; }
+
+/*Margin Bottom*/
+.u-mb-sm { margin-bottom: 1rem; }
+.u-mb-md { margin-bottom: 3rem; }
+.u-mb-lg { margin-bottom: 8rem; }
+
+/* ----------------------------- */
+/*--- 5. Components */
+address {
+    font-style: normal;
+}
+
+a {
+    color: #f5f6f7;
+}
+
+ul {
+    list-style: none;
+}
+/* Horizontal Rule */
+.resume-content-hr {
+    margin: 1rem 0 2rem 0;
+    width: 24%;
 }
