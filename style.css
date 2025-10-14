@@ -7,7 +7,7 @@
 
 /* 1. Global Page Setup */
 body {
-    margin: 2rem;
+    margin: 3rem;
     max-width: 100vw;
     font-family: 'Helvetica', Arial, sans-serif;
     color: #f5f6f7;
@@ -20,10 +20,10 @@ section {
 }
 
 /* Grid Setup */
-.grid {
+.grid, .resume-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3rem;
 }
 .col-1 {
     grid-column: span 1;
@@ -31,6 +31,18 @@ section {
 .col-2 {
     grid-column: span 2;
 }
-.resume-grid {
-    grid-column: 2 / span 3; /* start at 2 and span 3 column */
+.col-3 {
+    grid-column: span 3;
+}
+.col-4 {
+    grid-column: span 4;
+}
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+.resume-grid::before {
+    content: "";
+    grid-column: 1 / span 2;
 }
