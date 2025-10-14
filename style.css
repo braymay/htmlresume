@@ -1,0 +1,36 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Global Page Setup */
+body {
+    margin: 2rem;
+    max-width: 100vw;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #f5f6f7;
+    background-color: #232323;
+}
+
+section {
+    width: 100%;
+    padding-bottom: 6rem;
+}
+
+/* Grid Setup */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.col-1 {
+    grid-column: span 1;
+}
+.col-2 {
+    grid-column: span 2;
+}
+.resume-grid {
+    grid-column: 2 / span 3; /* start at 2 and span 3 column */
+}

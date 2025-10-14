@@ -17,11 +17,14 @@
         <meta property="og:image" content="#">
         <meta property="og:url" content="">
         <link rel="icon" type="image/png" href="#">
+
+        <!-- 4. Styles & JS -->
+         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- 1. Contact information (header)-->
-        <header class="header">
-            <div class="header-skills-wrap">
+        <header class="header grid">
+            <div class="header-skills-wrap col-2">
                 <ul class="header-skills-list">
                     <li>Web Design</li>
                     <li>Web Development</li>
@@ -38,8 +41,8 @@
             </address>
         </header>
         <!-- 2. Hero section (name, blurb)-->
-        <section class="hero">
-            <div class="hero-content-wrap">
+        <section class="hero grid">
+            <div class="hero-content-wrap col-2">
                 <h1>Brayden Maybury</h1>
                 <p>Web Designer</p>
             </div>
@@ -48,8 +51,8 @@
             </div>
         </section>
         <!-- 3. Resume Content (experience, education, references)-->
-         <section class="resume-grid">
-            <div class="resume-content experience-wrap">
+         <section class="resume-grid grid">
+            <div class="resume-content experience-wrap col-1">
                 <h2 class="content-title">Experience</h2>
                 <div class="resume-content-wrap job-wrap">
                     <h3 class="job-title">Senior Graphic Designer</h3>
@@ -80,7 +83,7 @@
                     <hr class="resume-content-hr">
                 </div>
             </div>
-            <div class="resume-content education-wrap">
+            <div class="resume-content education-wrap col-1">
                 <h2 class="content-title">Education</h2>
                 <div class="resume-content-wrap qualification-wrap">
                     <h3 class="qualification-title">Qualification</h3>
@@ -99,7 +102,7 @@
                     <hr class="resume-content-hr">
                 </div>
             </div>
-            <div class="resume-content references-wrap">
+            <div class="resume-content references-wrap col-1">
                 <h2 class="content-title">References</h2>
                 <div class="resume-content-wrap referee-wrap">
                     <h3 class="referee-name">Vince Frost</h3>
