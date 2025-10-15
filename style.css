@@ -160,3 +160,9 @@ button.theme-btn {
 button.theme-btn:hover {
     opacity: 0.6;
 }
+button.theme-btn:focus {
+    outline: none;
+}
+button.theme-btn:focus-visible {
+    outline: 2px solid var(--text-color);
+}
