@@ -1,2 +1,2 @@
 # htmlresume
-A resume built in HTML, purely for practice.
+(https://roadmap.sh/projects/single-page-cv)
