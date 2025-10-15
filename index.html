@@ -39,8 +39,12 @@
                 <p class="header-contact-text">Address<br>
                 123 Kern Street, Kernville, NSW 2435, Australia</p>
             </address>
-            <div class="button-theme col-1">
-                
+            <div>
+                <button id="theme-toggle" class="theme-btn" aria-pressed="false" title="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)" width="32px" height="32px" viewBox="0 0 256 256" id="Flat">
+                        <path d="M204,36H52A16.01833,16.01833,0,0,0,36,52V204a16.01833,16.01833,0,0,0,16,16H204a16.01833,16.01833,0,0,0,16-16V52A16.01833,16.01833,0,0,0,204,36ZM52,52h76V204H52Z"/>
+                    </svg>
+                </button>
             </div>
         </header>
         <!-- 2. Hero section (name, blurb)-->
@@ -138,5 +142,12 @@
                 <a href="https://unouno.studio/">unouno.studio</a></p>
             </div>
          </footer>
+
+         <!-- Them Toggle Button Script -->
+         <script>
+            document.getElementById("theme-toggle").addEventListener("click", () => {
+                document.querySelector('body').classList.toggle("dark-theme"); 
+            });
+         </script>
     </body>
 </html>
